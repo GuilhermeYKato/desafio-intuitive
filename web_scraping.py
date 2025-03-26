@@ -4,6 +4,7 @@ import zipfile
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
+# URL page to scrape
 URL = "https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos"
 
 # Set the headers to pretend that we are a browser
@@ -11,6 +12,7 @@ headers = {"User-Agent": "Mozilla/5.0"}
 # Send a GET request to the URL
 response = requests.get(URL, headers=headers)
 
+# Create a folder to save the PDF files
 folder = "pdf_files"
 os.makedirs(folder, exist_ok=True)
 
@@ -24,7 +26,7 @@ if response.status_code == 200:
 
     # Find all PDF links in the page
     pdf_links = soup.find_all("a", href=lambda href: (href and href.endswith(".pdf")))
-    print("Quantidade de PDF links encontrados:", len(pdf_links))
+    print("PDF links found:", len(pdf_links))
 
     # Print the URL of each link
     for link in pdf_links:
@@ -32,7 +34,7 @@ if response.status_code == 200:
         if "Anexo" in urljoin(URL, link.get("href")):
             pdf_link = urljoin(URL, link.get("href"))
 
-            # pdf name
+            # PDF name
             pdf_name = os.path.basename(pdf_link)
             print("PDF name: ", pdf_name)
 

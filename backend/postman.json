@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "2ce981bd-5a78-4329-8812-416cddc95ec9",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43312290"
+	},
+	"item": [
+		{
+			"name": "/search?q=Unimed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search?q=Unimed",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Unimed"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/search?q=Bradesco",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search?q=Bradesco",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Bradesco"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/search?q=Sul America",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search?q=Sul America",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Sul America"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/search_by_city?city=Rio de Janeiro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search_by_city?city=Rio de Janeiro",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search_by_city"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Rio de Janeiro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/search_by_city?city=São Paulo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search_by_city?city=São Paulo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search_by_city"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "São Paulo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/search_by_registro_ans List of ANS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"registro_ans\": [\"419761\",\"421545\", \"422908\", \"421553\" ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "/search_by_registro_ans List of ANS",
+					"path": [
+						"search_by_registro_ans List of ANS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/search_by_registro_ans Only One",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"registro_ans\": [\"419761\" ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/search_by_registro_ans",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search_by_registro_ans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/search_by_registro_ans Não Encontrado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"registro_ans\": [\"111111\" ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/search_by_registro_ans",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search_by_registro_ans"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

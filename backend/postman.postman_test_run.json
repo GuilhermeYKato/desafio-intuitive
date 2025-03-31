@@ -1,0 +1,432 @@
+{
+	"id": "419be5da-00fd-446b-93d5-76e26c220fe6",
+	"name": "New Collection Copy",
+	"timestamp": "2025-03-31T11:14:27.198Z",
+	"collection_id": "43312290-051f3e75-1704-4f7d-894d-5fe88452512f",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 33,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-03-31T11:14:26.441Z",
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "09e72d29-37bb-4e43-a782-60171f5d8237",
+			"name": "/search?q=Unimed",
+			"url": "http://127.0.0.1:8000/search?q=Unimed",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Verify the response content type is application/json": true,
+				"Telefone and Fax are in a valid format": false,
+				"CEP property must exist in the response": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify the response content type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Telefone and Fax are in a valid format": {
+					"pass": 0,
+					"fail": 1
+				},
+				"CEP property must exist in the response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Verify the response content type is application/json": true,
+					"Telefone and Fax are in a valid format": false,
+					"CEP property must exist in the response": true
+				}
+			]
+		},
+		{
+			"id": "699f25e1-da16-4074-a9e1-088d94f45a56",
+			"name": "/search?q=Bradesco",
+			"url": "http://127.0.0.1:8000/search?q=Bradesco",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Email is in a valid format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Email is in a valid format": true
+				}
+			]
+		},
+		{
+			"id": "39771b41-2385-435b-8fc2-4019a2e39a4d",
+			"name": "/search?q=Sul America",
+			"url": "http://127.0.0.1:8000/search?q=Sul America",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content type is application/json": true,
+				"Response body is an array with at least one element": true,
+				"Each element in the array has the required fields": true,
+				"Verify the structure of the response": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is an array with at least one element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each element in the array has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify the structure of the response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content type is application/json": true,
+					"Response body is an array with at least one element": true,
+					"Each element in the array has the required fields": true,
+					"Verify the structure of the response": true
+				}
+			]
+		},
+		{
+			"id": "7bccf887-6b82-4c88-ae32-5525998139bb",
+			"name": "/search_by_city?city=Rio de Janeiro",
+			"url": "http://127.0.0.1:8000/search_by_city?city=Rio de Janeiro",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the content type of application/json": true,
+				"Validate the first element in the array has all the required fields": true,
+				"Cidade field should be equal": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the content type of application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the first element in the array has all the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cidade field should be equal": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the content type of application/json": true,
+					"Validate the first element in the array has all the required fields": true,
+					"Cidade field should be equal": true
+				}
+			]
+		},
+		{
+			"id": "6c93a94d-a29c-49d6-a1c9-243a83d20921",
+			"name": "/search_by_city?city=São Paulo",
+			"url": "http://127.0.0.1:8000/search_by_city?city=São Paulo",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"CEP is in a valid format": false,
+				"Cidade should be 'São Paulo'": true,
+				"UF is a valid Brazilian state abbreviation": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CEP is in a valid format": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Cidade should be 'São Paulo'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"UF is a valid Brazilian state abbreviation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"CEP is in a valid format": false,
+					"Cidade should be 'São Paulo'": true,
+					"UF is a valid Brazilian state abbreviation": true
+				}
+			]
+		},
+		{
+			"id": "26c5daa2-4ec6-48e4-b41e-b6af8a7db924",
+			"name": "/search_by_registro_ans List of ANS",
+			"url": "http://127.0.0.1:8000/search_by_registro_ans",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Response is in JSON format": true,
+				"Fields like CNPJ, CEP, DDD, and Telefone exist in the response": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Fields like CNPJ, CEP, DDD, and Telefone exist in the response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Response is in JSON format": true,
+					"Fields like CNPJ, CEP, DDD, and Telefone exist in the response": true
+				}
+			]
+		},
+		{
+			"id": "85234a61-8c65-4497-b067-d32c75e99d3c",
+			"name": "/search_by_registro_ans Only One",
+			"url": "http://127.0.0.1:8000/search_by_registro_ans",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Verify that the response is an array with at least one element": true,
+				"Data_Registro_ANS is in a valid format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the response is an array with at least one element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data_Registro_ANS is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Verify that the response is an array with at least one element": true,
+					"Data_Registro_ANS is in a valid format": true
+				}
+			]
+		},
+		{
+			"id": "f1eb3daf-22d3-4362-90ea-3e259fbe84b9",
+			"name": "/search_by_registro_ans Não Encontrado",
+			"url": "http://127.0.0.1:8000/search_by_registro_ans",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response status code is 404": true,
+				"Response Content-Type is application/json": true,
+				"Response has the required field 'detail'": true,
+				"Detail is a non-empty string": true,
+				"Verify that the response body is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field 'detail'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Detail is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 404": true,
+					"Response Content-Type is application/json": true,
+					"Response has the required field 'detail'": true,
+					"Detail is a non-empty string": true,
+					"Verify that the response body is not empty": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 33,
+	"collection": {
+		"requests": [
+			{
+				"id": "09e72d29-37bb-4e43-a782-60171f5d8237",
+				"method": "GET"
+			},
+			{
+				"id": "699f25e1-da16-4074-a9e1-088d94f45a56",
+				"method": "GET"
+			},
+			{
+				"id": "39771b41-2385-435b-8fc2-4019a2e39a4d",
+				"method": "GET"
+			},
+			{
+				"id": "7bccf887-6b82-4c88-ae32-5525998139bb",
+				"method": "GET"
+			},
+			{
+				"id": "6c93a94d-a29c-49d6-a1c9-243a83d20921",
+				"method": "GET"
+			},
+			{
+				"id": "26c5daa2-4ec6-48e4-b41e-b6af8a7db924",
+				"method": "POST"
+			},
+			{
+				"id": "85234a61-8c65-4497-b067-d32c75e99d3c",
+				"method": "POST"
+			},
+			{
+				"id": "f1eb3daf-22d3-4362-90ea-3e259fbe84b9",
+				"method": "POST"
+			}
+		]
+	}
+}

@@ -59,13 +59,20 @@ As consultas analíticas podem ser compiladas utilizando o script `analytic_quer
 1. **Instalar dependências:**
 
 Navegue até o diretório `frontend` e instale as dependências do Vue.js. 
+
 ```
 npm install
 ```
 
 2. **Compilar e rodar o front-end:**
 
-Para compilar e rodar o front-end, execute o comando adequado no seu terminal ou prompt de comando para rodar o servidor Vue.js. O front-end estará acessível em: [http://localhost:8080/](http://localhost:8080/)
+Para compilar e rodar o front-end, execute o comando adequado no seu terminal ou prompt de comando para rodar o servidor Vue.js. 
+
+```
+npm run serve
+```
+
+O front-end estará acessível em: [http://localhost:8080/](http://localhost:8080/)
 
 ### Back-End (FastAPI Python)
 
